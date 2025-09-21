@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "server": "json-server --watch server/db.json"
+        "server": "json-server --watch server/db.json",
+        "vercel-build": "npm install --legacy-peer-deps && next build"
     },
     "dependencies": {
         "@emotion/react": "^11.10.6",
