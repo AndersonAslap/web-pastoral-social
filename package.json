@@ -29,6 +29,7 @@
         "jspdf": "^2.5.1",
         "mantine-datatable": "^1.7.35",
         "next": "14.0.3",
+        "next-auth": "^4.24.11",
         "ni18n": "^1.0.5",
         "nookies": "^2.5.2",
         "react": "18.2.0",

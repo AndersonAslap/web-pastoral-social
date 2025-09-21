@@ -6,7 +6,7 @@ import { usePagination } from "@/hooks/usePagination";
 import { Family } from "@/@types";
 import { DataTable } from 'mantine-datatable';
 
-const data: Family[] = [
+const data: any[] = [
     { id: '1', name: 'Família Silva' },
     { id: '2', name: 'Família Souza' },
     { id: '3', name: 'Família Oliveira' },
@@ -37,6 +37,7 @@ const FamilyPage: React.FC = () => {
                 <h5 className="mb-5 text-lg font-semibold dark:text-white-light">Famílias</h5>
                 <div className="datatables">
                     <DataTable
+                        withBorder={false}
                         noRecordsText="No results match your search query"
                         highlightOnHover
                         className="table-hover whitespace-nowrap"
@@ -50,7 +51,7 @@ const FamilyPage: React.FC = () => {
                         totalRecords={10}
                         recordsPerPage={10}
                         page={1}
-                        //onPageChange={(p: number) => setPage(p)}
+                        onPageChange={() => { }}
                         minHeight={200}
                         paginationText={({ from, to, totalRecords }: { from: number, to: number, totalRecords: number }) => `Exibindo  ${from} 
                         à ${to} de ${totalRecords} registros`}
